@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+    <html>
+        <head>
+        <style>
+            #customers {font-family: Arial, Helvetica, sans-serif;font-size:15px border-collapse: collapse;}#customers td, #customers th {border: 1px solid #ddd;font-weight: normal;padding: 5px;font-size:15px;text-align: center}#customers tr:nth-child(even){background-color: #f2f2f2;font-size:15px;text-align: center}#customers tr:hover {background-color: #ddd;font-size:10px;text-align: center}#customers th {padding-top: 10px;padding-bottom: 10px;text-align: center;background-color: #04AA6D;color: white;}
+        </style>
+        </head>
+        <section class="container">
+            <h1>
+                <font-family= Arial, Helvetica, sans-serif;>
+                    Build error tc14.3.0.0
+            </h1>
+            <h4>
+                <font-family= Arial, Helvetica, sans-serif;>
+                    Time:2023-05-18 18:41:50.606177<br>
+                <font-family= Arial, Helvetica, sans-serif;>
+                    Total CPs scanned:68
+                <font-family= Arial, Helvetica, sans-serif;>
+                <b>
+                    CPs with failure: 6
+                </b>
+            </h4>
+            <center>
+                <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+                    <table class="display" style="width:100%">
+                        <table id="customers">
+                            <tr style="text-align: center;">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th>
+                                            <input type="text" name="search" id="input2_CP" placeholder="Search CP"onkeyup="searchFunCP()" />
+                                        </th>
+                                        <th>
+                                            <form><select id="Linux flag" onchange="searchFunlnxFlag()"; >
+                                                <option  value="none"selected>
+                                                </option>
+                                                <option onselect="searchFunlnxFlag()"; value="True">
+                                                    True
+                                                </option>
+                                                <option onselect="searchFunlnxFlag()";value="False">
+                                                    False
+                                                </option>
+                                            </form>
+                                        </th>
+                                        <th>
+                                            <input type="text" name="search4" id="input4_lnxFile" placeholder="Search lnxFile"onkeyup="searchFunlnxFile()" />
+                                        </th>
+                                        <th>
+                                            <form>
+                                                <select id="Windows flag" onchange="searchFunwnx64Flag()"; >
+                                                    <option value="none"selected>
+                                                    </option>
+                                                    <option onselect="searchFunlnxFlag()"; value="True">
+                                                        True
+                                                    </option>
+                                                    <option onselect="searchFunlnxFlag()";value="False">
+                                                        False
+                                                    </option>
+                                                </select>
+                                            </form>
+                                        </th>
+                                        <th>
+                                            <input type="text" name="search6" id="input6_wnx64File" placeholder="Search wnxFile"onkeyup="searchFunwnxFile()" />
+                                        </th>
+                                        <th>
+                                            <form>
+                                                <select id="Equal flag" onchange="searchFunequalFlag()"; >
+                                                    <option  value="none"selected>
+                                                    </option>
+                                                    <option onselect="searchFunlnxFlag()"; value="True">
+                                                        True
+                                                    </option>
+                                                    <option onselect="searchFunlnxFlag()";value="False">
+                                                        False
+                                                    </option>
+                                                </select>
+                                            </form>
+                                        </th>
+                                        <th>
+                                        <form><select id="Triage flag" onchange="searchTriageFlag()"; >
+                                                <option  value="none"selected>
+                                                </option>
+                                                <option onselect="searchTriageFlag()"; value="True">
+                                                    True
+                                                </option>
+                                                <option onselect="searchTriageFlag()";value="False">
+                                                    False
+                                                </option>
+                                            </form>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Sr No
+                                        </th>
+                                        <th>
+                                            Product
+                                        </th>
+                                        <th>
+                                            DMS Node
+                                        </th>
+                                        <th>
+                                            CP
+                                        </th>
+                                        <th>
+                                            Linux error flag
+                                        </th>
+                                        <th>
+                                            File name
+                                        </th>
+                                        <th>
+                                            Windows error flag
+                                        </th>
+                                        <th>
+                                            File name
+                                        </th>
+                                        <th>
+                                            Same Error
+                                        </th>
+                                        <th>
+                                            Triaged?
+                                        </th>
+                                    </tr>
+                                </thead>
+        
+                                <tbody>
+                                    <tr>
+                <th>
+                    1
+                </th>
+                <td>
+                    tc
+                </td>
+                <td>
+                    tc14.3.0.0
+                </td>
+                <td>
+                    <a href=http://devops/self-service/dms/developer-pipeline?cp=PLM847694 target = "_self">PLM847694</a>
+                </td>
+                <td>
+                    True
+                </td>
+                <td>
+                    ['make_err', 'qlibfnd0booleansolve_make_err', 'universal_20230515222944_err.log', 'universal_err']
+                </td>
+                <td>
+                    False
+                </td>
+                <td>
+                    []
+                </td>
+                <td>
+                    False
+                </td>
+                <td>
+                    True
+                </td>
+            </tr>
+<tr>
+                <th>
+                    2
+                </th>
+                <td>
+                    tc
+                </td>
+                <td>
+                    tc14.3.0.0
+                </td>
+                <td>
+                    <a href=http://devops/self-service/dms/developer-pipeline?cp=PLM844029 target = "_self">PLM844029</a>
+                </td>
+                <td>
+                    True
+                </td>
+                <td>
+                    ['tc-adminutils-container_all_err', 'tc-daemons-container_all_err', 'tc-deployutils-container_all_err', 'tc-tcserver-container_all_err', 'universal_20230517123602_err.log', 'universal_err']
+                </td>
+                <td>
+                    False
+                </td>
+                <td>
+                    []
+                </td>
+                <td>
+                    False
+                </td>
+                <td>
+                    False
+                </td>
+            </tr>
+<tr>
+                <th>
+                    3
+                </th>
+                <td>
+                    tc
+                </td>
+                <td>
+                    tc14.3.0.0
+                </td>
+                <td>
+                    <a href=http://devops/self-service/dms/developer-pipeline?cp=PLM847720 target = "_self">PLM847720</a>
+                </td>
+                <td>
+                    True
+                </td>
+                <td>
+                    ['qlibme_make_err', 'universal_20230515090948_err.log']
+                </td>
+                <td>
+                    True
+                </td>
+                <td>
+                    ['qlibme_make_err', 'universal_20230515124814_err.log']
+                </td>
+                <td>
+                    False
+                </td>
+                <td>
+                    True
+                </td>
+            </tr>
+<tr>
+                <th>
+                    4
+                </th>
+                <td>
+                    tc
+                </td>
+                <td>
+                    tc14.3.0.0
+                </td>
+                <td>
+                    <a href=http://devops/self-service/dms/developer-pipeline?cp=PLM847485 target = "_self">PLM847485</a>
+                </td>
+                <td>
+                    False
+                </td>
+                <td>
+                    []
+                </td>
+                <td>
+                    True
+                </td>
+                <td>
+                    ['apb0attrparmbase_docs_all_err', 'brndmgmt_docs_all_err', 'cae_docs_all_err', 'cla0classification_docs_all_err', 'edalibrary_docs_all_err', 'emps_docs_all_err', 'esmsoftware_docs_all_err', 'foundation_docs_all_err', 'prg0programinfra_docs_all_err', 'srmintegration_docs_all_err', 'tcae_docs_all_err', 'universal_20230517021656_err.log', 'universal_err', 'vendormanagement_docs_all_err', 'weldmgmt_docs_all_err', 'xc0sharecollaboration_docs_all_err']
+                </td>
+                <td>
+                    False
+                </td>
+                <td>
+                    True
+                </td>
+            </tr>
+<tr>
+                <th>
+                    5
+                </th>
+                <td>
+                    tc
+                </td>
+                <td>
+                    tc14.3.0.0
+                </td>
+                <td>
+                    <a href=http://devops/self-service/dms/developer-pipeline?cp=PLM846266 target = "_self">PLM846266</a>
+                </td>
+                <td>
+                    False
+                </td>
+                <td>
+                    []
+                </td>
+                <td>
+                    True
+                </td>
+                <td>
+                    ['universal_20230515184822_err.log', 'universal_err']
+                </td>
+                <td>
+                    False
+                </td>
+                <td>
+                    False
+                </td>
+            </tr>
+<tr>
+                <th>
+                    6
+                </th>
+                <td>
+                    tc
+                </td>
+                <td>
+                    tc14.3.0.0
+                </td>
+                <td>
+                    <a href=http://devops/self-service/dms/developer-pipeline?cp=PLM848063 target = "_self">PLM848063</a>
+                </td>
+                <td>
+                    True
+                </td>
+                <td>
+                    ['qlibps_make_err', 'universal_20230515183927_err.log']
+                </td>
+                <td>
+                    False
+                </td>
+                <td>
+                    []
+                </td>
+                <td>
+                    False
+                </td>
+                <td>
+                    True
+                </td>
+            </tr>
+                                </tbody>
+        
+                            </tr>
+                        </table>
+                    </table>
+                </table>
+            </center>
+        </section>
+            <font color="#04AA6D";font-family= Arial, Helvetica, sans-serif;>
+            <b>
+                CPs with failure: 6
+            </b>
+            <script>
+            const searchFunCP = () => {
+                let filter = document.getElementById('input2_CP').value.toLowerCase();
+                let myTable = document.getElementById('customers');
+                let tr = myTable.getElementsByTagName('tr');
+                for (var i = 0; i < tr.length; i++) {
+                    let td = tr[i].getElementsByTagName('td')[2];
+                    if (td) {
+                        let textvlaue = td.textContent || td.innerHTML;
+                        if (textvlaue.toLowerCase().indexOf(filter) > -1) {
+                            tr[i].style.display ="";
+                        }
+                        else {
+                            tr[i].style.display ="none";
+                        }
+                    }
+                }
+            }
+            const searchFunlnxFlag = () => {
+                let filter = document.getElementById('Linux flag').value.toLowerCase();
+                let myTable = document.getElementById('customers');
+                let tr = myTable.getElementsByTagName('tr');
+                for (var i = 0; i < tr.length; i++) {
+                    let td = tr[i].getElementsByTagName('td')[3];
+                    if (td) {
+                        let textvlaue = td.textContent || td.innerHTML;
+                        if (textvlaue.toLowerCase().indexOf(filter) > -1) {
+                            tr[i].style.display ="";
+                        } else if (filter =="none"){
+                        tr[i].style.display ="";
+                    } else {
+                        tr[i].style.display ="none";
+                    }
+                }
+            }
+                            }
+            const searchFunlnxFile = () => {
+                let filter = document.getElementById('input4_lnxFile').value.toLowerCase();
+                let myTable = document.getElementById('customers');
+                let tr = myTable.getElementsByTagName('tr');
+                for (var i = 0; i < tr.length; i++) {
+                    let td = tr[i].getElementsByTagName('td')[4];
+                    if (td) {
+                        let textvlaue = td.textContent || td.innerHTML;
+                        if (textvlaue.toLowerCase().indexOf(filter) > -1) {
+                            tr[i].style.display ="";
+                        } else {
+                            tr[i].style.display ="none";
+                        }
+                    }
+                }
+            }
+
+            const searchFunwnx64Flag = () => {
+                let filter = document.getElementById('Windows flag').value.toLowerCase();
+                let myTable = document.getElementById('customers');
+                let tr = myTable.getElementsByTagName('tr');
+                for (var i = 0; i < tr.length; i++) {
+                    let td = tr[i].getElementsByTagName('td')[5];
+                    if (td) {
+                        let textvlaue = td.textContent || td.innerHTML;
+                        if (textvlaue.toLowerCase().indexOf(filter) > -1) {
+                            tr[i].style.display ="";
+                        } else if (filter =="none"){
+                        tr[i].style.display ="";
+                    } else {
+                        tr[i].style.display ="none";
+                    }
+                }
+            }
+            }
+            const searchFunwnxFile = () => {
+                let filter = document.getElementById('input6_wnx64File').value.toLowerCase();
+                let myTable = document.getElementById('customers');
+                let tr = myTable.getElementsByTagName('tr');
+                for (var i = 0; i < tr.length; i++) {
+                    let td = tr[i].getElementsByTagName('td')[6];
+                    if (td) {
+                        let textvlaue = td.textContent || td.innerHTML;
+                        if (textvlaue.toLowerCase().indexOf(filter) > -1) {
+                            tr[i].style.display ="";
+                        } else {
+                            tr[i].style.display ="none";
+                        }
+                    }
+                }
+            }
+
+            const searchFunequalFlag = () => {
+                let filter = document.getElementById('Equal flag').value.toLowerCase();
+                let myTable = document.getElementById('customers');
+                let tr = myTable.getElementsByTagName('tr');
+                for (var i = 0; i < tr.length; i++) {
+                    let td = tr[i].getElementsByTagName('td')[7];
+                    if (td) {
+                        let textvlaue = td.textContent || td.innerHTML;
+                        if (textvlaue.toLowerCase().indexOf(filter) > -1) {
+                            tr[i].style.display ="";
+                        } else if (filter =="none"){
+                        tr[i].style.display ="";
+                    } else {
+                        tr[i].style.display ="none";
+                    }
+                }
+            }
+            }
+             const searchTriageFlag = () => {
+                let filter = document.getElementById('Triage flag').value.toLowerCase();
+                let myTable = document.getElementById('customers');
+                let tr = myTable.getElementsByTagName('tr');
+                for (var i = 0; i < tr.length; i++) {
+                    let td = tr[i].getElementsByTagName('td')[8];
+                    if (td) {
+                        let textvlaue = td.textContent || td.innerHTML;
+                        if (textvlaue.toLowerCase().indexOf(filter) > -1) {
+                            tr[i].style.display ="";
+                        } else if (filter =="none"){
+                        tr[i].style.display ="";
+                    } else {
+                        tr[i].style.display ="none";
+                    }
+                }
+            }
+            }
+            </script>
+    </html>
+
+        

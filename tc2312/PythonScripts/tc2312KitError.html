@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+    <html>
+        <head>
+        <style>
+            #customers {font-family: Arial, Helvetica, sans-serif;font-size:15px border-collapse: collapse;}#customers td, #customers th {border: 1px solid #ddd;font-weight: normal;padding: 5px;font-size:15px;text-align: center}#customers tr:nth-child(even){background-color: #f2f2f2;font-size:15px;text-align: center}#customers tr:hover {background-color: #ddd;font-size:10px;text-align: center}#customers th {padding-top: 10px;padding-bottom: 10px;text-align: center;background-color: #04AA6D;color: white;}
+        </style>
+        </head>
+        <section class="container">
+            <h1>
+                <font-family= Arial, Helvetica, sans-serif;>
+                    kit error tc2312
+            </h1>
+            <h4>
+                <font-family= Arial, Helvetica, sans-serif;>
+                    Time:2023-05-18 18:34:53.547936<br>
+                <font-family= Arial, Helvetica, sans-serif;>
+                    Total CPs scanned:461
+                <font-family= Arial, Helvetica, sans-serif;>
+                <b>
+                    CPs with failure: 2
+                </b>
+            </h4>
+            <center>
+                <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+                    <table class="display" style="width:100%">
+                        <table id="customers">
+                            <tr style="text-align: center;">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th>
+                                            <input type="text" name="search" id="input2_CP" placeholder="Search CP"onkeyup="searchFunCP()" />
+                                        </th>
+                                        <th>
+                                            <form><select id="Linux flag" onchange="searchFunlnxFlag()"; >
+                                                <option  value="none"selected>
+                                                </option>
+                                                <option onselect="searchFunlnxFlag()"; value="True">
+                                                    True
+                                                </option>
+                                                <option onselect="searchFunlnxFlag()";value="False">
+                                                    False
+                                                </option>
+                                            </form>
+                                        </th>
+                                        <th>
+                                            <input type="text" name="search4" id="input4_lnxFile" placeholder="Search lnxFile"onkeyup="searchFunlnxFile()" />
+                                        </th>
+                                        <th>
+                                            <form>
+                                                <select id="Windows flag" onchange="searchFunwnx64Flag()"; >
+                                                    <option value="none"selected>
+                                                    </option>
+                                                    <option onselect="searchFunlnxFlag()"; value="True">
+                                                        True
+                                                    </option>
+                                                    <option onselect="searchFunlnxFlag()";value="False">
+                                                        False
+                                                    </option>
+                                                </select>
+                                            </form>
+                                        </th>
+                                        <th>
+                                            <input type="text" name="search6" id="input6_wnx64File" placeholder="Search wnxFile"onkeyup="searchFunwnxFile()" />
+                                        </th>
+                                        <th>
+                                            <form>
+                                                <select id="Equal flag" onchange="searchFunequalFlag()"; >
+                                                    <option  value="none"selected>
+                                                    </option>
+                                                    <option onselect="searchFunlnxFlag()"; value="True">
+                                                        True
+                                                    </option>
+                                                    <option onselect="searchFunlnxFlag()";value="False">
+                                                        False
+                                                    </option>
+                                                </select>
+                                            </form>
+                                        </th>
+                                        <th>
+                                        <form><select id="Triage flag" onchange="searchTriageFlag()"; >
+                                                <option  value="none"selected>
+                                                </option>
+                                                <option onselect="searchTriageFlag()"; value="True">
+                                                    True
+                                                </option>
+                                                <option onselect="searchTriageFlag()";value="False">
+                                                    False
+                                                </option>
+                                            </form>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Sr No
+                                        </th>
+                                        <th>
+                                            Product
+                                        </th>
+                                        <th>
+                                            DMS Node
+                                        </th>
+                                        <th>
+                                            CP
+                                        </th>
+                                        <th>
+                                            Linux error flag
+                                        </th>
+                                        <th>
+                                            File name
+                                        </th>
+                                        <th>
+                                            Windows error flag
+                                        </th>
+                                        <th>
+                                            File name
+                                        </th>
+                                        <th>
+                                            Same Error
+                                        </th>
+                                        <th>
+                                            Triaged?
+                                        </th>
+                                    </tr>
+                                </thead>
+        
+                                <tbody>
+                                    <tr>
+                <th>
+                    1
+                </th>
+                <td>
+                    tc
+                </td>
+                <td>
+                    tc2312
+                </td>
+                <td>
+                    <a href=http://devops/self-service/dms/developer-pipeline?cp=PLM838513 target = "_self">PLM838513</a>
+                </td>
+                <td>
+                    True
+                </td>
+                <td>
+                    ['bin_err']
+                </td>
+                <td>
+                    False
+                </td>
+                <td>
+                    []
+                </td>
+                <td>
+                    False
+                </td>
+                <td>
+                    False
+                </td>
+            </tr>
+<tr>
+                <th>
+                    2
+                </th>
+                <td>
+                    tc
+                </td>
+                <td>
+                    tc2312
+                </td>
+                <td>
+                    <a href=http://devops/self-service/dms/developer-pipeline?cp=PLM848489 target = "_self">PLM848489</a>
+                </td>
+                <td>
+                    True
+                </td>
+                <td>
+                    ['tc_microserviceframework_err']
+                </td>
+                <td>
+                    True
+                </td>
+                <td>
+                    ['tc_microserviceframework_err']
+                </td>
+                <td>
+                    False
+                </td>
+                <td>
+                    False
+                </td>
+            </tr>
+                                </tbody>
+        
+                            </tr>
+                        </table>
+                    </table>
+                </table>
+            </center>
+        </section>
+            <font color="#04AA6D";font-family= Arial, Helvetica, sans-serif;>
+            <b>
+                CPs with failure: 2
+            </b>
+            <script>
+            const searchFunCP = () => {
+                let filter = document.getElementById('input2_CP').value.toLowerCase();
+                let myTable = document.getElementById('customers');
+                let tr = myTable.getElementsByTagName('tr');
+                for (var i = 0; i < tr.length; i++) {
+                    let td = tr[i].getElementsByTagName('td')[2];
+                    if (td) {
+                        let textvlaue = td.textContent || td.innerHTML;
+                        if (textvlaue.toLowerCase().indexOf(filter) > -1) {
+                            tr[i].style.display ="";
+                        }
+                        else {
+                            tr[i].style.display ="none";
+                        }
+                    }
+                }
+            }
+            const searchFunlnxFlag = () => {
+                let filter = document.getElementById('Linux flag').value.toLowerCase();
+                let myTable = document.getElementById('customers');
+                let tr = myTable.getElementsByTagName('tr');
+                for (var i = 0; i < tr.length; i++) {
+                    let td = tr[i].getElementsByTagName('td')[3];
+                    if (td) {
+                        let textvlaue = td.textContent || td.innerHTML;
+                        if (textvlaue.toLowerCase().indexOf(filter) > -1) {
+                            tr[i].style.display ="";
+                        } else if (filter =="none"){
+                        tr[i].style.display ="";
+                    } else {
+                        tr[i].style.display ="none";
+                    }
+                }
+            }
+                            }
+            const searchFunlnxFile = () => {
+                let filter = document.getElementById('input4_lnxFile').value.toLowerCase();
+                let myTable = document.getElementById('customers');
+                let tr = myTable.getElementsByTagName('tr');
+                for (var i = 0; i < tr.length; i++) {
+                    let td = tr[i].getElementsByTagName('td')[4];
+                    if (td) {
+                        let textvlaue = td.textContent || td.innerHTML;
+                        if (textvlaue.toLowerCase().indexOf(filter) > -1) {
+                            tr[i].style.display ="";
+                        } else {
+                            tr[i].style.display ="none";
+                        }
+                    }
+                }
+            }
+
+            const searchFunwnx64Flag = () => {
+                let filter = document.getElementById('Windows flag').value.toLowerCase();
+                let myTable = document.getElementById('customers');
+                let tr = myTable.getElementsByTagName('tr');
+                for (var i = 0; i < tr.length; i++) {
+                    let td = tr[i].getElementsByTagName('td')[5];
+                    if (td) {
+                        let textvlaue = td.textContent || td.innerHTML;
+                        if (textvlaue.toLowerCase().indexOf(filter) > -1) {
+                            tr[i].style.display ="";
+                        } else if (filter =="none"){
+                        tr[i].style.display ="";
+                    } else {
+                        tr[i].style.display ="none";
+                    }
+                }
+            }
+            }
+            const searchFunwnxFile = () => {
+                let filter = document.getElementById('input6_wnx64File').value.toLowerCase();
+                let myTable = document.getElementById('customers');
+                let tr = myTable.getElementsByTagName('tr');
+                for (var i = 0; i < tr.length; i++) {
+                    let td = tr[i].getElementsByTagName('td')[6];
+                    if (td) {
+                        let textvlaue = td.textContent || td.innerHTML;
+                        if (textvlaue.toLowerCase().indexOf(filter) > -1) {
+                            tr[i].style.display ="";
+                        } else {
+                            tr[i].style.display ="none";
+                        }
+                    }
+                }
+            }
+
+            const searchFunequalFlag = () => {
+                let filter = document.getElementById('Equal flag').value.toLowerCase();
+                let myTable = document.getElementById('customers');
+                let tr = myTable.getElementsByTagName('tr');
+                for (var i = 0; i < tr.length; i++) {
+                    let td = tr[i].getElementsByTagName('td')[7];
+                    if (td) {
+                        let textvlaue = td.textContent || td.innerHTML;
+                        if (textvlaue.toLowerCase().indexOf(filter) > -1) {
+                            tr[i].style.display ="";
+                        } else if (filter =="none"){
+                        tr[i].style.display ="";
+                    } else {
+                        tr[i].style.display ="none";
+                    }
+                }
+            }
+            }
+             const searchTriageFlag = () => {
+                let filter = document.getElementById('Triage flag').value.toLowerCase();
+                let myTable = document.getElementById('customers');
+                let tr = myTable.getElementsByTagName('tr');
+                for (var i = 0; i < tr.length; i++) {
+                    let td = tr[i].getElementsByTagName('td')[8];
+                    if (td) {
+                        let textvlaue = td.textContent || td.innerHTML;
+                        if (textvlaue.toLowerCase().indexOf(filter) > -1) {
+                            tr[i].style.display ="";
+                        } else if (filter =="none"){
+                        tr[i].style.display ="";
+                    } else {
+                        tr[i].style.display ="none";
+                    }
+                }
+            }
+            }
+            </script>
+    </html>
+
+        
